@@ -1,0 +1,112 @@
+h1 {
+    margin: 0;
+}
+.main_block {
+    width: 960px;
+    margin: 0 auto;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+.wraper {
+    display: flex;
+    justify-content: space-between;
+}
+.title_main {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.main_block1 {
+    display: inline-block;
+    width: 49%;
+}
+.title_block {
+    border-bottom: 1px solid black;
+    background-image: url(garbage.svg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.checkbox {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* check box */
+label {
+    margin-bottom: 20px;
+    display: block;
+}
+.check-box {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.check-style {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #0ea36e;
+    margin-left: -20px;
+}
+/* .check-box:checked + .check-style::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: #0ea36e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.check-box:checked + .check-style {
+    background-image: url('check.svg');
+}
+.check-box:disabled + .check-style {
+/*     border-color:#ccc; */
+    /* background-image: url('check.svg'); */
+}
+.check-box:checked:disabled + .check-style::before {
+    background-color: #ccc;
+}
+
+.check-box:focus + .check-style {
+    box-shadow: 0 0 0 2px #000;
+}
+.red-border {
+    border: 2px solid red;
+}
+.size {
+    width: 30px;
+    height: 30px;
+}
+.form__test {
+    margin: 0 auto;
+    height: 330px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(158, 158, 218);
+}
+.form__title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.form__test-input {
+    display: flex;
+    flex-direction: column;
+}
+.form__item+.form__item{
+    margin-top: 10px;
+}
+.form__item {
+    padding: 5px;
+}
+.center__form {
+    width: 300px;
+    height: 350px;
+}
